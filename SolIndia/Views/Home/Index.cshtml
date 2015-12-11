@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Inicio";
+}
+@Scripts.Render("~/bundles/index")
+<div class="jumbotron">
+        <h1 id="hTitleIndex">Importadora Sol de la India</h1>
+        @*<p class="lead"></p>
+        <p><a href="" class="btn btn-primary btn-lg">Leer más &raquo;</a></p>*@
+</div>
+<h1 id="hTitleIndex2">Importadora Sol de la India</h1>
+<div id="divGifContainer">
+</div>
+<div id="divIndex">
+    <img src="~/Content/img/imagen.gif" />
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Quienes Somos</h2>
+        <p><a id="btnVideo1" class="btn btn-default" style="margin-bottom:0.6em;">Ver video &raquo;</a></p>
+        <div id="divVideoIntro1" style="float:left;width:100%;">
+            <iframe id="frameVideo1" src="https://www.youtube.com/embed/Bmy-XEvdR8s" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p><a class="btn btn-default" href="@Url.Action("About","Home")">Leer más &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Nuestra Empresa</h2>
+        <p><a id="btnVideo2" class="btn btn-default" style="margin-bottom:0.6em;">Ver video &raquo;</a></p>
+        <div id="divVideoIntro2" style="float:left;width:100%;">
+            <iframe id="frameVideo2" src="https://www.youtube.com/embed/CqsviG8x3y8" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p><a class="btn btn-default" href="@Url.Action("Business","Home")">Leer más &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Productos</h2>
+        <p><a id="btnVideo3" class="btn btn-default" style="margin-bottom:0.6em;">Ver video &raquo;</a></p>
+        <div id="divVideoIntro3" style="float:left;width:100%;">
+            <iframe id="frameVideo3" src="https://www.youtube.com/embed/B0m1WduCtQI" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p><a class="btn btn-default" href="@Url.Action("Products","Home")">Leer más &raquo;</a></p>
+    </div>
+</div>
+<div id="divVideoPlay"></div>

@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Productos";
+}
+@Scripts.Render("~/bundles/gallery")
+@Scripts.Render("~/bundles/products")
+<noscript>
+    <style>
+    .es-carousel ul{
+        display:block;
+    }
+    </style>
+</noscript>
+<script type="text/javascript">
+    window.onload = function () {
+        $('.body-content').css('opacity', '1');
+    }
+</script>
+<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
+    <div class="rg-image-wrapper">
+        {{if itemsCount > 1}}
+        <div class="rg-image-nav">
+            <a href="#" class="rg-image-nav-prev">Previous Image</a>
+            <a href="#" class="rg-image-nav-next">Next Image</a>
+        </div>
+        {{/if}}
+        <div class="rg-image"></div>
+        <div class="rg-loading"></div>
+        <div class="rg-caption-wrapper">
+            <div class="rg-caption" style="display:none;">
+                <p></p>
+            </div>
+        </div>
+    </div>
+</script>
+<br />
+<div class="divContainer">
+    <h2>@ViewBag.Title.</h2>
+    <h3>@ViewBag.Message</h3>
+    <hr />
+    <div id="rg-gallery" class="rg-gallery">        
+        <div class="rg-thumbs">            
+            <div class="es-carousel-wrapper" style="display: block;">
+                <div class="es-nav">
+                    <span class="es-nav-prev">Previous</span>
+                    <span class="es-nav-next">Next</span>
+                </div>
+                <div class="es-carousel">
+                    <ul style="width: 1738px; display: block; margin-left: 0px;">
+                        <li class="selected" style="margin-right: 3px; width: 69px;">
+                        <a href="#" style="border-width: 2px;">
+                            <img src="../Content/img/products/thumbs/1.jpg" data-large="../Content/img/products/1.jpg" alt="image01" data-description="Decorativo">
+                        </a>
+                        </li>
+                        <li style="margin-right: 3px; width: 69px;">
+                        <a href="#" style="border-width: 2px;">
+                            <img src="../Content/img/products/thumbs/2.jpg" data-large="../Content/img/products/2.jpg" alt="image02" data-description="Decorativo">
+                        </a>
+                        </li>
+                        <li style="margin-right: 3px; width: 69px;">
+                        <a href="#" style="border-width: 2px;">
+                            <img src="../Content/img/products/thumbs/3.jpg" data-large="../Content/img/products/3.jpg" alt="image03" data-description="Decorativo">
+                            </a>
+                        </li>
+                        <li style="margin-right: 3px; width: 69px;">
+                        <a href="#" style="border-width: 2px;">
+                            <img src="../Content/img/products/thumbs/4.jpg" data-large="../Content/img/products/4.jpg" alt="image04" data-description="Incienso">
+                            </a>
+                        </li>                        
+                    </ul>
+                </div>
+                <div class="es-nav"><span class="es-nav-prev" style="display: none;">Previous</span><span class="es-nav-next">Next</span></div>
+                <div class="es-nav"><span class="es-nav-prev" style="display: none;">Previous</span><span class="es-nav-next">Next</span></div>
+            </div>            
+        </div>
+    </div>
+</div>
