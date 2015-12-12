@@ -1,19 +1,19 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Importadora El Sol de la India</title>
+    <title>@ViewBag.Title - Importadora Sol de la India</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/textillate")
     @Scripts.Render("~/bundles/layout")
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">    
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top" >
+    <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -21,49 +21,49 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("El Sol de la India", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Sol de la India", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Inicio", "Index", "Home", new { Class = "homeLink", href = Url.Action("Index", "Home") })</li>
                     <li>@Html.ActionLink("Quienes Somos", "About", "Home")</li>
-                    <li>@Html.ActionLink("Nuestra Empresa", "Business", "Home")</li>                    
+                    <li>@Html.ActionLink("Nuestra Empresa", "Business", "Home")</li>
                     <li>@Html.ActionLink("Productos", "Products", "Home")</li>
                     <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
                 </ul>
-                @*<div id="divSocial" style="margin-top:0.4em;">
-                    <a href="http://www.facebook.com/sharer.php?u=@Url.Encode(@Request.Url.AbsoluteUri)/&t=ImportadoraSoldelaIndia" target="_blank" class="btn btn-social-icon btn-md btn-facebook" style="margin-left:5em;width:15px;height:15px;">
-                        <span class="fa fa-facebook"></span>
-                        <div data-href="https://www.importadorasoldelaindia.com" data-layout="icon" style="margin-left:1em;"></div>
-                    </a>
-                    <a href="https://plus.google.com/share?url=@Url.Encode(@Request.Url.AbsoluteUri)" target="_blank" class="btn btn-social-icon btn-md btn-google" style="width:15px;height:15px;">
-                        <span class="fa fa-google-plus"></span>
-                        <div data-action="share" data-annotation="none"></div>
-                    </a>
-                    <a href="http://twitter.com/share?url=@Url.Encode(@Request.Url.AbsoluteUri)&text=ImportadoraSoldelaIndia" target="_blank" class="btn btn-social-icon btn-md btn-twitter" style="width:15px;height:15px;">
-                        <span class="fa fa-twitter"></span>
-                    </a>
-                </div>*@     
                 <div id="divSocial" style="margin-top:0.4em;">
-                    <a href="http://www.facebook.com/sharer.php?u=www.google.com.co/&t=ImportadoraSoldelaIndia" target="_blank" class="btn btn-social-icon btn-md btn-facebook" style="margin-left:5em;width:15px;height:15px;">
+                    <a href="http://www.facebook.com/sharer.php?u=http://www.importadorasoldelaindia.com&t=ImportadoraSoldelaIndia" target="_blank" class="btn btn-social-icon btn-md btn-facebook" style="margin-left:5em;width:15px;height:15px;">
                         <span class="fa fa-facebook"></span>
                         <div data-href="https://www.importadorasoldelaindia.com" data-layout="icon" style="margin-left:1em;"></div>
                     </a>
-                    <a href="https://plus.google.com/share?url=www.google.com.co" target="_blank" class="btn btn-social-icon btn-md btn-google" style="width:15px;height:15px;">
+                    <a href="https://plus.google.com/share?url=http://www.importadorasoldelaindia.com" target="_blank" class="btn btn-social-icon btn-md btn-google" style="width:15px;height:15px;">
                         <span class="fa fa-google-plus"></span>
                         <div data-action="share" data-annotation="none"></div>
                     </a>
-                    <a href="http://twitter.com/share?url=http://www.google.com.co&text=Test: " target="_blank" class="btn btn-social-icon btn-md btn-twitter" style="width:15px;height:15px;">
+                    <a href="http://twitter.com/share?url=http://wwww.importadorasoldelaindia.com&text=ImportadoraSoldelaIndia" target="_blank" class="btn btn-social-icon btn-md btn-twitter" style="width:15px;height:15px;">
                         <span class="fa fa-twitter"></span>
                     </a>
-                </div>      
+                </div>
+                @*<div id="divSocial" style="margin-top:0.4em;">
+                        <a href="http://www.facebook.com/sharer.php?u=www.google.com.co/&t=ImportadoraSoldelaIndia" target="_blank" class="btn btn-social-icon btn-md btn-facebook" style="margin-left:5em;width:15px;height:15px;">
+                            <span class="fa fa-facebook"></span>
+                            <div data-href="https://www.importadorasoldelaindia.com" data-layout="icon" style="margin-left:1em;"></div>
+                        </a>
+                        <a href="https://plus.google.com/share?url=www.google.com.co" target="_blank" class="btn btn-social-icon btn-md btn-google" style="width:15px;height:15px;">
+                            <span class="fa fa-google-plus"></span>
+                            <div data-action="share" data-annotation="none"></div>
+                        </a>
+                        <a href="http://twitter.com/share?url=http://www.google.com.co&text=Test: " target="_blank" class="btn btn-social-icon btn-md btn-twitter" style="width:15px;height:15px;">
+                            <span class="fa fa-twitter"></span>
+                        </a>
+                    </div>*@
             </div>
-           </div>
+        </div>
     </div>
     <div id="divBody" class="container body-content">
         @RenderBody()
         <hr />
-        <br /><br />        
+        <br /><br />
     </div>
     <hr />
     <footer style="text-align:center;">
