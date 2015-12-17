@@ -6,6 +6,8 @@
     background-attachment: fixed;
     background-repeat:no-repeat;
     font-size:x-large;    
+    font-family: 'Bodoni MT';
+    font-weight:600;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -14,8 +16,8 @@
     padding-right: 15px;
     text-align: center;
     background-color: #1c1e22;
-    opacity: 0.9;
-    color: orange;    
+    opacity: 0.7;
+    color: yellow;    
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
