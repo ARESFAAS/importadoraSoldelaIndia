@@ -224,6 +224,16 @@
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="Content\files\Extractos.pdf" />
+    <Content Include="Content\files\baños.pdf" />
+    <Content Include="Content\files\darshan.pdf" />
+    <Content Include="Content\files\esencias_sol_de_la_india.pdf" />
+    <Content Include="Content\files\gr.pdf" />
+    <Content Include="Content\files\hem.pdf" />
+    <Content Include="Content\files\jabon_casa_de_la_suerte.pdf" />
+    <Content Include="Content\files\jabon_venus.pdf" />
+    <Content Include="Content\files\majarani.pdf" />
+    <Content Include="Content\files\perfume_plastico.pdf" />
+    <Content Include="Content\files\perfume_vidrio.pdf" />
     <None Include="Properties\PublishProfiles\PRD-FTP.pubxml" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
